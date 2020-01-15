@@ -1,0 +1,9 @@
+{{> header}}
+{{#each events}}
+<div id="eventsHolder">
+    {{> eventInfo}}
+</div>
+{{else}}
+{{> noEvent}}
+{{/each}}
+{{> footer}}

@@ -1,0 +1,8 @@
+<div class="actions">
+    {{#if isAuthor}}
+    <a class="btn btn-danger" href="/del/{{recipeId}}">Archive</a>
+    <a class="btn btn-info" href="/edit/{{recipeId}}">Edit</a>
+    {{else}}
+    <a class="btn btn-success" href="/like/{{recipeId}}">{{likesCounter}} likes</a>
+    {{/if}}
+</div>
